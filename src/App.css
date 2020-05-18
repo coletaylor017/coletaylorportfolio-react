@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.signature-logo {
+  filter: invert(100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-jumbotron {
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-image: url("/public/polygon-bg.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3 {
+  font-family: "Cutive Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.divider {
+  padding-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.spacer {
+  background-color: #fff;
+  width: 100%;
+  padding: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mobile-spacing {
+  margin-bottom: 1em;
+}
+
+.profile-photo {
+  height: 8em;
 }
