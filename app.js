@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
 // https://stackoverflow.com/a/23894573/5166231
-const env = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV || 'development';
 
 var forceSsl = function (req, res, next) {
     if (req.headers['x-forwarded-proto'] !== 'https') {
