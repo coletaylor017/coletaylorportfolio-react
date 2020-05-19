@@ -6,12 +6,10 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-// for all routes, redirect to SSL 
-app.get('*', function (req, res) {
-    res.redirect('https://' + req.headers.host + req.url);
-})
-
 app.get('/', function (req, res) {
+    if (!req.secure) {
+        res.redirect('https://' + req.headers.host + req.url);
+    }
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.listen(process.env.PORT, function () {
