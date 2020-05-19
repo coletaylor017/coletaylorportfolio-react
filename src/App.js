@@ -23,7 +23,7 @@ function App() {
 							</div>
 							<div className="col">
 								<h1>Cole Taylor</h1>
-								<h5>Java, Javascript, Node.js, React, MongoDB, Bootstrap</h5>
+								<h5>Javascript, React, MongoDB, Bootstrap 4, Java</h5>
 								{contactButtons}
 							</div>
 						</div>
@@ -37,7 +37,7 @@ function App() {
 						<Project
 							title="Art Portfolio"
 							subtitle="React with Next JS, Bootstrap 4"
-							body="A clean, responsive portfolio site made with React. I used a headless CMS called Strapi to allow her to upload pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a dedicated sidebar."
+							body="A clean, responsive portfolio site made with React. I used a headless CMS called Strapi to let the artist upload pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar."
 							buttons={[
 								{
 									text: "Visit the site",
@@ -48,7 +48,7 @@ function App() {
 							dark
 						/>
 						<Project
-							title="Ai Notebook"
+							title="AI Notebook"
 							subtitle="Express JS, Semantic UI, Mongo DB"
 							body="An online journal that produces AI-driven feedback on one's mood and thought patterns over time. Users can tag journal entries and display them in groups, as well as view data points over time with charts created using Chart JS. The dashboard has a featured quote that changes every day and admin users can modify the bank of quotes that are displayed."
 							buttons={[

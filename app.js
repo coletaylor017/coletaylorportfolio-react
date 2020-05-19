@@ -2,6 +2,7 @@
 // https://create-react-app.dev/docs/deployment/
 const express = require('express');
 const path = require('path');
+const axios = require('axios');
 const app = express();
 
 
@@ -19,8 +20,19 @@ if (env === 'production') {
     app.use(forceSsl);
 }
 
-app.use(express.static(path.join(__dirname, 'build')));
+// A bit of a janky fix to the long load times of a Heroku free dyno- ping the Rellios site upon page load to start the dyno so that it will hopefully be running by the time the link is pressed
+var requestProjectSites = function (req, res, next) {
+    const httpClient = axios.create();
+    httpClient.defaults.timeout = 1;
+    httpClient.get("http://rellios.herokuapp.com").catch(function (err) {
+        // do nothing
+    });
+    return next();
+}
 
+app.use(requestProjectSites);
+
+app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
