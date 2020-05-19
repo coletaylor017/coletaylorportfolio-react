@@ -4,7 +4,6 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'build')));
 
 // https://stackoverflow.com/a/23894573/5166231
 var env = process.env.NODE_ENV || 'development';
@@ -19,6 +18,9 @@ var forceSsl = function (req, res, next) {
 if (env === 'production') {
     app.use(forceSsl);
 }
+
+app.use(express.static(path.join(__dirname, 'build')));
+
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
