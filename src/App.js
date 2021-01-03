@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ProjectCard from './ProjectCard';
 
 function App() {
-  const background = "polygon-bg.jpeg";
 	const contactButtons = <div>
 		<a href="https://www.github.com/coletaylor017" target="_blank" rel=" noopener noreferrer" className="btn btn-dark mr-1">GitHub</a>
 		<a href="https://www.linkedin.com/in/coletaylor017" target="_blank" rel=" noopener noreferrer" className="btn btn-primary mr-1">LinkedIn</a>
@@ -17,24 +16,25 @@ function App() {
       <div>
         <div className="scrollspy">
           <div data-spy="scroll" data-target="#main-nav" data-offset="50">
-            <div className="jumbotron jumbotron-fluid main-jumbotron" style={{ backgroundImage: "url(" + background + ")" }}>
+            <div className="jumbotron jumbotron-fluid main-jumbotron text-light">
               <div className="container">
-                <div className="row align-items-center">
-                  <div className="col-3">
-                    <img src="professionalPhoto.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100" />
+                <div className="row align-items-center justify-content-center">
+                  <div className="col-12 col-md-auto justify-content-center justify-content-md-right text-center text-md-right">
+                    <img src="github-photo2.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
                   </div>
-                  <div className="col-9 text-left">
-                    <h1>Cole Taylor</h1>
-                    <h5>Software developer and C.S. student at the University of Utah</h5>
-                    {contactButtons}
+                  <div className="col-12 col-md-auto text-center text-md-left">
+                    <span className="mb-3"><h3 className="d-inline-block pr-md-2"><strong>Cole Taylor</strong></h3><h5 class="d-inline-block">Software developer and C.S. student at the University of Utah</h5></span>
+                    <div class="mt-3">
+                      {contactButtons}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="container">
-              <h2>My Work</h2>
-              <hr className="divider" />
+            <div className="container-fluid px-0 text-center">
+              <h2 className="pt-5 pb-3">My Work</h2>
+              <hr className="mx-5" />
               <div className="row">
                 <ProjectCard
                   title="AI Notebook"
@@ -62,7 +62,7 @@ function App() {
                     }
                   ]}
                   imageSrc="journalsite.PNG"
-                  dark
+                  
                 />
                 <ProjectCard
                   title="Tank Wars"
@@ -99,6 +99,8 @@ function App() {
                       <h6>Skills:</h6>
                       <ul>
                         <li>MVC Architecture</li>
+                        <li>Recursive algorithms</li>
+                        <li>Making cool stuff</li>
                       </ul>
                     </div>
                   }
@@ -113,7 +115,7 @@ function App() {
                     }
                   ]}
                   imageSrc="minesweeper.PNG"
-                  dark
+                  
                 />
                 <ProjectCard
                   title="Maya Wagner Art Portfolio"
@@ -124,7 +126,7 @@ function App() {
                       <p>A clean, responsive portfolio site made with React for a friend. I used a headless CMS called Strapi to let her upload pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar.</p>
                       <h6>Skills:</h6>
                       <ul>
-                        <li>React component structuring</li>
+                        <li>React component structure</li>
                         <li>Routing with Next.js</li>
                         <li>Integrating a headless CMS</li>
                       </ul>
@@ -143,10 +145,9 @@ function App() {
             </div>
           </div>
           <div className="spacer"></div>
-          <div className="jumbotron jumbotron-fluid">
-            <div className="container">
+          <div className="jumbotron jumbotron-fluid mb-0 footertron">
+            <div className="container text-center">
               <h5>Contact me through any of these channels:</h5>
-              <div className="divider"></div>
               {contactButtons}
             </div>
           </div>
