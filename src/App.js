@@ -13,32 +13,19 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.0/devicon.min.css"></link>
       <div>
         <div className="scrollspy">
           <div data-spy="scroll" data-target="#main-nav" data-offset="50">
             <div className="jumbotron jumbotron-fluid main-jumbotron" style={{ backgroundImage: "url(" + background + ")" }}>
               <div className="container">
-                <div className="row">
-                  <div className="col col-auto">
+                <div className="row align-items-center">
+                  <div className="col-3">
                     <img src="professionalPhoto.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100" />
                   </div>
-                  <div className="col">
+                  <div className="col-9 text-left">
                     <h1>Cole Taylor</h1>
-                    <h5>Javascript, React, MongoDB, Bootstrap 4, Java</h5>
+                    <h5>Software developer and C.S. student at the University of Utah</h5>
                     {contactButtons}
                   </div>
                 </div>
@@ -50,22 +37,20 @@ function App() {
               <hr className="divider" />
               <div className="row">
                 <ProjectCard
-                  title="Art Portfolio"
-                  subtitle="React with Next JS, Bootstrap 4"
-                  body="A clean, responsive portfolio site made with React. I used a headless CMS called Strapi to let the artist upload pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar."
-                  buttons={[
-                    {
-                      text: "Visit the site",
-                      link: "https://rellios.herokuapp.com"
-                    }
-                  ]}
-                  imageSrc="rellios.png"
-                  dark
-                />
-                <ProjectCard
                   title="AI Notebook"
                   subtitle="Express JS, Semantic UI, Mongo DB"
-                  body="An online journal that produces AI-driven feedback on one's mood and thought patterns over time. Users can tag journal entries and display them in groups, as well as view data points over time with charts created using Chart JS. The dashboard has a featured quote that changes every day and admin users can modify the bank of quotes that are displayed."
+                  languages={["mongodb", "node", "express", "js", "css", "bootstrap"]}
+                  body={
+                    <div>
+                      <p>An online journal that uses the IBM Watson NLU API to let you search by people, places, and things. The server side uses Node.js with Express and the client is built with Bootstrap 4.</p>
+                      <h6>Skills:</h6>
+                      <ul>
+                        <li>MongoDB Aggregation Pipelines</li>
+                        <li>Client-side and server-side form validation</li>
+                        <li>Responsive CSS 3 & Bootstrap 4</li>
+                      </ul>
+                    </div>
+                  }
                   buttons={[
                     {
                       text: "Visit the site",
@@ -76,7 +61,83 @@ function App() {
                       link: "http://github.com/coletaylor017/ainotebook"
                     }
                   ]}
-                  imageSrc="writingblocks-thumbnail.png"
+                  imageSrc="journalsite.PNG"
+                  dark
+                />
+                <ProjectCard
+                  title="Tank Wars"
+                  subtitle=""
+                  languages={["csharp"]}
+                  body={
+                    <div>
+                      <p>An online multiplayer tank game implemented in C#. The server runs as a console app and can accept multiple clients. I coded this with a partner for CS 3500 at the University of Utah.</p>
+                      <h6>Skills:</h6>
+                      <ul>
+                        <li>MVC architecture</li>
+                        <li>Multithreaded programming</li>
+                        <li>Networking and serialization</li>
+                        <li>Pair programming</li>
+                      </ul>
+                    </div>
+                  }
+                  buttons={[
+                    {
+                      text: "Github Repo",
+                      link: "https://github.com/uofu-cs3500-fall20/game-taylorbarber/tree/master/TankWars"
+                    }
+                  ]}
+                  imageSrc="tankwars.PNG"
+                  dark
+                />
+                <ProjectCard
+                  title="Minesweeper"
+                  subtitle="Express JS, Semantic UI, Mongo DB"
+                  languages={["csharp"]}
+                  body={
+                    <div>
+                      <p>A minesweeper game written in C# that runs in the command line. I wrote this in two days over Christmas break 2020. It uses proper MVC so you could make a GUI if you wanted to. But then, would you ever want to when the command line version looks this cool?</p>
+                      <h6>Skills:</h6>
+                      <ul>
+                        <li>MVC Architecture</li>
+                      </ul>
+                    </div>
+                  }
+                  buttons={[
+                    {
+                      text: "Download the latest release",
+                      link: "https://github.com/coletaylor017/minesweeper-cli/releases/download/v1.0/minesweeper.zip"
+                    },
+                    {
+                      text: "Github Repo",
+                      link: "https://github.com/coletaylor017/minesweeper-cli"
+                    }
+                  ]}
+                  imageSrc="minesweeper.PNG"
+                  dark
+                />
+                <ProjectCard
+                  title="Maya Wagner Art Portfolio"
+                  subtitle="React with Next JS, Bootstrap 4"
+                  languages={["react", "js", "bootstrap"]}
+                  body={
+                    <div>
+                      <p>A clean, responsive portfolio site made with React for a friend. I used a headless CMS called Strapi to let her upload pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar.</p>
+                      <h6>Skills:</h6>
+                      <ul>
+                        <li>React component structuring</li>
+                        <li>Routing with Next.js</li>
+                        <li>Integrating a headless CMS</li>
+                      </ul>
+                    </div>
+                  }
+                  buttons={[
+                    {
+                      text: "Visit the site",
+                      link: "https://rellios.herokuapp.com"
+                    }
+                  ]}
+                  imageSrc="rellios.PNG"
+                  dark
                 />
               </div>
             </div>
