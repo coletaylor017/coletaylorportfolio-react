@@ -29,7 +29,7 @@ export default class ProjectCard extends Component {
                         <div className="col-12 col-md-6 mb-3">
                             {this.props.body}
                             {this.props.buttons.map(function (button) {
-                                return <a key={button.text} className="btn btn-primary mr-1" href={button.link} target="_blank" rel="noopener noreferrer">{button.text}</a>
+                                return <a key={button.text} className="btn btn-primary mr-1 mb-1" href={button.link} target="_blank" rel="noopener noreferrer">{button.text}</a>
                             })}
                         </div>
                         <div className="col-12 col-md-6">
