@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
-export default class Project extends Component {
+export default class ProjectCard extends Component {
     render() {
         return <div className="col-md-6 mb-4">
             <div className={"card " + (this.props.dark ? "text-light bg-dark" : null)}>
@@ -14,12 +13,12 @@ export default class Project extends Component {
                     <p>{this.props.body}</p>
 
                     {this.props.buttons.map(function (button) {
-                        return <a className="btn btn-primary mr-1" href={button.link} target="_blank">{button.text}</a>
+                        return <a className="btn btn-primary mr-1" href={button.link} target="_blank" rel="noopener noreferrer">{button.text}</a>
                     })}
 
                     <hr />
 
-                    <a href="http://ainotebook.herokuapp.com" target="_blank">
+                    <a href="http://ainotebook.herokuapp.com" target="_blank" rel="noopener noreferrer">
                         <img className="img-fluid" src={this.props.imageSrc} alt="" />
                     </a>
                 </div>
