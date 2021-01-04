@@ -106,7 +106,7 @@ function App() {
                   }
                   buttons={[
                     {
-                      text: "Download the latest release",
+                      text: "Download the Latest Release",
                       link: "https://github.com/coletaylor017/minesweeper-cli/releases/download/v1.0/minesweeper.zip"
                     },
                     {
@@ -134,8 +134,12 @@ function App() {
                   }
                   buttons={[
                     {
-                      text: "Visit the site",
+                      text: "Visit the Site",
                       link: "https://rellios.herokuapp.com"
+                    },
+                    {
+                      text: "Github Repo",
+                      link: "https://github.com/coletaylor017/rellios"
                     }
                   ]}
                   imageSrc="rellios.PNG"
