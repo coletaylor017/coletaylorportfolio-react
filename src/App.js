@@ -135,7 +135,7 @@ function App() {
                   buttons={[
                     {
                       text: "Visit the Site",
-                      link: "https://rellios.herokuapp.com"
+                      link: "https://rellios.vercel.app"
                     },
                     {
                       text: "Github Repo",
