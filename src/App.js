@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProjectCard from './ProjectCard';
@@ -42,9 +41,9 @@ function App() {
                   languages={["mongodb", "node", "express", "js", "css", "bootstrap"]}
                   body={
                     <div>
-                      <p>An online journal that uses the IBM Watson NLU API to let you search by people, places, and things. The server side uses Node.js with Express and the client is built with Bootstrap 4.</p>
+                      <p>An online journal that uses the IBM Watson NLU API to generate smart search suggestions for people, places, and things. The server side uses Node.js with Express and the client is built with Bootstrap 4.</p>
                       <h6>Skills:</h6>
-                      <ul>
+                      <ul className="p-0">
                         <li>MongoDB Aggregation Pipelines</li>
                         <li>Client-side and server-side form validation</li>
                         <li>Responsive CSS 3 & Bootstrap 4</li>
@@ -72,18 +71,19 @@ function App() {
                     <div>
                       <p>An online multiplayer tank game implemented in C#. The server runs as a console app and can accept multiple clients. I coded this with a partner for CS 3500 at the University of Utah.</p>
                       <h6>Skills:</h6>
-                      <ul>
+                      <ul className="p-0">
                         <li>MVC architecture</li>
                         <li>Multithreaded programming</li>
                         <li>Networking and serialization</li>
                         <li>Pair programming</li>
                       </ul>
+                      <p><em>Note: Source code is stored on Google Drive by request of the professor as an anti-cheating measure.</em></p>
                     </div>
                   }
                   buttons={[
                     {
-                      text: "Github Repo",
-                      link: "https://github.com/uofu-cs3500-fall20/game-taylorbarber/tree/master/TankWars"
+                      text: "Source Code",
+                      link: "https://drive.google.com/drive/folders/1RTC3nCgGwwyfH-rDea6EefxYQvfNlCuO?usp=sharing"
                     }
                   ]}
                   imageSrc="tankwars.PNG"
@@ -97,7 +97,7 @@ function App() {
                     <div>
                       <p>A minesweeper game written in C# that runs in the command line. I wrote this in two days over Christmas break 2020. It uses proper MVC so you could make a GUI if you wanted to. But then, would you ever want to when the command line version looks this cool?</p>
                       <h6>Skills:</h6>
-                      <ul>
+                      <ul className="p-0">
                         <li>MVC Architecture</li>
                         <li>Recursive algorithms</li>
                         <li>Making cool stuff</li>
@@ -125,10 +125,10 @@ function App() {
                     <div>
                       <p>A clean, responsive portfolio site made with React for a friend. I used a headless CMS called Strapi to let her upload pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar.</p>
                       <h6>Skills:</h6>
-                      <ul>
-                        <li>React component structure</li>
+                      <ul className="p-0">
                         <li>Routing with Next.js</li>
                         <li>Integrating a headless CMS</li>
+                        <li>React component structure</li>
                       </ul>
                     </div>
                   }
