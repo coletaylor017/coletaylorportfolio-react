@@ -77,7 +77,7 @@ function App() {
                         <li>Networking and serialization</li>
                         <li>Pair programming</li>
                       </ul>
-                      <p><em>Note: Source code is stored on Google Drive by request of the professor as an anti-cheating measure.</em></p>
+                      <p><em>Note: Source code is available only on Google Drive by request of the professor as an anti-cheating measure.</em></p>
                     </div>
                   }
                   buttons={[
@@ -128,7 +128,7 @@ function App() {
                       <ul className="p-0">
                         <li>Routing with Next.js</li>
                         <li>Integrating a headless CMS</li>
-                        <li>React component structure</li>
+                        <li>Responsive web design</li>
                       </ul>
                     </div>
                   }
