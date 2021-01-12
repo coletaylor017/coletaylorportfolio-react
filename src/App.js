@@ -52,7 +52,7 @@ function App() {
                   }
                   buttons={[
                     {
-                      text: "Visit the site",
+                      text: "Visit the Site",
                       link: "https://ainotebook.herokuapp.com"
                     },
                     {
