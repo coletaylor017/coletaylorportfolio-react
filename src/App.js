@@ -82,6 +82,10 @@ function App() {
                   }
                   buttons={[
                     {
+                      text: "Download the Latest Release",
+                      link: "https://github.com/coletaylor017/TankWars/releases/download/1.0/TankWars.zip"
+                    },
+                    {
                       text: "Source Code",
                       link: "https://drive.google.com/drive/folders/1RTC3nCgGwwyfH-rDea6EefxYQvfNlCuO?usp=sharing"
                     }
