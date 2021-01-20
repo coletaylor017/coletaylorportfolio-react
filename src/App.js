@@ -1,14 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProjectCard from './ProjectCard';
+import ContactMenu from './ContactMenu';
 
 function App() {
-	const contactButtons = <div>
-		<a href="https://www.github.com/coletaylor017" target="_blank" rel=" noopener noreferrer" className="btn btn-dark mr-1">GitHub</a>
-		<a href="https://www.linkedin.com/in/coletaylor017" target="_blank" rel=" noopener noreferrer" className="btn btn-primary mr-1">LinkedIn</a>
-		<a href="mailto:coletaylor017@gmail.com" target="_blank" rel=" noopener noreferrer" className="btn btn-success mr-1">Email me</a>
-	</div>;
-
   return (
     <div className="App">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.0/devicon.min.css"></link>
@@ -18,13 +13,13 @@ function App() {
             <div className="jumbotron jumbotron-fluid main-jumbotron text-light">
               <div className="container">
                 <div className="row align-items-center justify-content-center">
-                  <div className="col-12 col-md-auto justify-content-center justify-content-md-right text-center text-md-right">
+                  <div className="col-12 col-md-auto mb-md-2 justify-content-center justify-content-md-right text-center text-md-right">
                     <img src="github-photo2.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
                   </div>
-                  <div className="col-12 col-md-auto text-center text-md-left">
-                    <span className="mb-3"><h3 className="d-inline-block pr-md-2"><strong>Cole Taylor</strong></h3><h5 class="d-inline-block">Software developer and C.S. student at the University of Utah</h5></span>
+                  <div className="col-12 col-md-auto text-center text-lg-left">
+                    <span className="mb-3"><h3 className="d-inline-block pr-md-2"><strong>Cole Taylor</strong></h3><h5 class="d-inline-block">Software Developer and C.S. Student at the University of Utah</h5></span>
                     <div class="mt-3">
-                      {contactButtons}
+                      <ContactMenu includeResume />
                     </div>
                   </div>
                 </div>
@@ -156,7 +151,7 @@ function App() {
           <div className="jumbotron jumbotron-fluid mb-0 footertron">
             <div className="container text-center">
               <h5>Contact me through any of these channels:</h5>
-              {contactButtons}
+              <ContactMenu />
             </div>
           </div>
         </div>
