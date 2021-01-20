@@ -17,6 +17,7 @@ export default class ProjectCard extends Component {
             <div className={"container-fluid m-0 pt-3 pb-2 " + (this.props.dark ? "text-light bg-darker" : "")}>
                 <div className="text-center pt-4 MT-5">
                     <h3>{this.props.title}</h3>
+                    <p><em>{this.props.subtitle}</em></p>
                     <h4 className="mb-3">
                         {this.props.languages.map(function (language) {
                             return <i className={"mr-2 " + languageIconMap[language]}></i>

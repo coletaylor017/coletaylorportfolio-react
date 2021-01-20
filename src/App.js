@@ -32,7 +32,7 @@ function App() {
               <div className="row">
                 <ProjectCard
                   title="AI Notebook"
-                  subtitle="Express JS, Semantic UI, Mongo DB"
+                  subtitle="Personal Project"
                   languages={["mongodb", "node", "express", "js", "css", "bootstrap"]}
                   body={
                     <div>
@@ -60,7 +60,7 @@ function App() {
                 />
                 <ProjectCard
                   title="Tank Wars"
-                  subtitle=""
+                  subtitle="Class project for CS 3500"
                   languages={["csharp"]}
                   body={
                     <div>
@@ -90,7 +90,7 @@ function App() {
                 />
                 <ProjectCard
                   title="Minesweeper"
-                  subtitle="Express JS, Semantic UI, Mongo DB"
+                  subtitle="Personal Project"
                   languages={["csharp"]}
                   body={
                     <div>
@@ -118,7 +118,7 @@ function App() {
                 />
                 <ProjectCard
                   title="Maya Wagner Art Portfolio"
-                  subtitle="React with Next JS, Bootstrap 4"
+                  subtitle="Personal Project"
                   languages={["react", "js", "bootstrap"]}
                   body={
                     <div>
