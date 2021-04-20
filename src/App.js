@@ -10,7 +10,7 @@ function App() {
       <div>
         <div className="scrollspy">
           <div data-spy="scroll" data-target="#main-nav" data-offset="50">
-            <div className="jumbotron jumbotron-fluid main-jumbotron text-light">
+            <div className="jumbotron jumbotron-fluid main-jumbotron text-light mb-0">
               <div className="container">
                 <div className="row align-items-center justify-content-center">
                   <div className="col-12 col-md-auto mb-md-2 justify-content-center justify-content-md-right text-center text-md-right">
@@ -27,9 +27,33 @@ function App() {
             </div>
 
             <div className="container-fluid px-0 text-center">
-              <h2 className="pt-5 pb-3">My Work</h2>
-              <hr className="mx-5" />
+              <h2 className="pt-5 pb-5 my-4">My Work</h2>
+              {/* <hr className="mx-5" /> */}
               <div className="row">
+                <ProjectCard
+                  title="School Authority"
+                  subtitle="Contract Project"
+                  languages={["node", "typescript", "css", "bootstrap"]}
+                  body={
+                    <div>
+                      <p>School Authority is a website that aggregates and makes data about US colleges accessible. I wrote server-side Typescript that queries for and sends college data to the frontend. I also created and executed designs for responsive charts written with Javscript and CSS.</p>
+                      <h6>Skills:</h6>
+                      <ul className="p-0">
+                        <li>UI Design</li>
+                        <li>Agile development on a small team</li>
+                        <li>Responsive CSS 3 & Bootstrap 4</li>
+                      </ul>
+                    </div>
+                  }
+                  buttons={[
+                    {
+                      text: "Visit the Site",
+                      link: "https://schoolauthority.org/colleges/arizona-state-university"
+                    }
+                  ]}
+                  imageSrc="schoolAuthorityPreview.png"
+                  dark
+                />
                 <ProjectCard
                   title="AI Notebook"
                   subtitle="Personal Project"
@@ -64,12 +88,12 @@ function App() {
                   languages={["csharp"]}
                   body={
                     <div>
-                      <p>An online multiplayer tank game implemented in C#. The server runs as a console app and can accept multiple clients. I coded this with a partner for CS 3500 at the University of Utah.</p>
+                      <p>An online multiplayer tank game implemented in C#. The server runs as a console app and can accept multiple clients. I designed and programmed this with a partner for CS 3500 at the University of Utah.</p>
                       <h6>Skills:</h6>
                       <ul className="p-0">
-                        <li>MVC architecture</li>
+                        <li>Design Patterns</li>
                         <li>Multithreaded programming</li>
-                        <li>Networking and serialization</li>
+                        <li>Debugging race conditions</li>
                         <li>Pair programming</li>
                       </ul>
                       <p><em>Note: Source code is available only on Google Drive by request of the professor as an anti-cheating measure.</em></p>
@@ -97,9 +121,8 @@ function App() {
                       <p>A minesweeper game written in C# that runs in the command line. I wrote this in two days over Christmas break 2020. It uses proper MVC so you could make a GUI if you wanted to. But then, would you ever want to when the command line version looks this cool?</p>
                       <h6>Skills:</h6>
                       <ul className="p-0">
-                        <li>MVC Architecture</li>
                         <li>Recursive algorithms</li>
-                        <li>Making cool stuff</li>
+                        <li>Design patterns</li>
                       </ul>
                     </div>
                   }
@@ -117,16 +140,16 @@ function App() {
                   
                 />
                 <ProjectCard
-                  title="Maya Wagner Art Portfolio"
+                  title="Art Portfolio for Maya Wagner"
                   subtitle="Personal Project"
                   languages={["react", "js", "bootstrap"]}
                   body={
                     <div>
-                      <p>A clean, responsive portfolio site made with React for a friend. I used a headless CMS called Strapi to let her upload pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar.</p>
+                      <p>A responsive portfolio site made with React for a friend. I used a headless CMS to let her upload art pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar. The focus was on an extremely simple user interface so that she could start manging her site with little or no learning curve.</p>
                       <h6>Skills:</h6>
                       <ul className="p-0">
-                        <li>Routing with Next.js</li>
-                        <li>Integrating a headless CMS</li>
+                        <li>Project manegement & agile development</li>
+                        <li>CMS integration</li>
                         <li>Responsive web design</li>
                       </ul>
                     </div>

@@ -6,6 +6,7 @@ export default class ProjectCard extends Component {
             "mongodb": "devicon-mongodb-plain",
             "csharp": "devicon-csharp-plain",
             "js": "devicon-javascript-plain",
+            "typescript": "devicon-typescript-plain",
             "node": "devicon-nodejs-plain",
             "bootstrap": "devicon-bootstrap-plain",
             "java": "devicon-java-plain",
