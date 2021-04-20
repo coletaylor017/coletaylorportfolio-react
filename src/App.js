@@ -14,7 +14,7 @@ function App() {
               <div className="container">
                 <div className="row align-items-center justify-content-center">
                   <div className="col-12 col-md-auto mb-md-2 justify-content-center justify-content-md-right text-center text-md-right">
-                    <img src="github-photo2.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
+                    <img src="cole_taylor_right.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
                   </div>
                   <div className="col-12 col-md-auto text-center text-lg-left">
                     <span className="mb-3"><h3 className="d-inline-block pr-md-2"><strong>Cole Taylor</strong></h3><h5 class="d-inline-block">Software Developer and C.S. Student at the University of Utah</h5></span>
@@ -60,7 +60,7 @@ function App() {
                   languages={["mongodb", "node", "express", "js", "css", "bootstrap"]}
                   body={
                     <div>
-                      <p>An online journal that uses the IBM Watson NLU API to generate smart search suggestions for people, places, and things. The server side uses Node.js with Express and the client is built with Bootstrap 4.</p>
+                      <p>An online journal that attempts to guess what you are thinking about and then generates interesting charts with that data. The server uses the IBM Watson web API to obtain NLU data for each journal entry. Then I store the data in a database, analyze it, and make charts on the frontend with the aggregated data.</p>
                       <h6>Skills:</h6>
                       <ul className="p-0">
                         <li>MongoDB Aggregation Pipelines</li>
@@ -79,7 +79,7 @@ function App() {
                       link: "http://github.com/coletaylor017/ainotebook"
                     }
                   ]}
-                  imageSrc="journalsite.PNG"
+                  imageSrc="aiNotebookData.PNG"
                   
                 />
                 <ProjectCard

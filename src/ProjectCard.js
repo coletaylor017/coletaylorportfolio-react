@@ -34,7 +34,7 @@ export default class ProjectCard extends Component {
                             })}
                         </div>
                         <div className="col-11 col-md-5 p-3 mb-3">
-                            <img className={"img-fluid " + (this.props.dark ? "" : "border")} src={this.props.imageSrc} alt="" />
+                            <img className={"img-fluid " + (this.props.border ? "border" : "")} src={this.props.imageSrc} alt="" />
                         </div>
                     </div>
                 </div>
