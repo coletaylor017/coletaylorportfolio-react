@@ -14,7 +14,7 @@ function App() {
               <div className="container">
                 <div className="row align-items-center justify-content-center">
                   <div className="col-12 col-md-auto mb-md-2 justify-content-center justify-content-md-right text-center text-md-right">
-                    <img src="Cole.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
+                    <img src="cole.JPG" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
                   </div>
                   <div className="col-12 col-md-auto text-center text-lg-left">
                     <span className="mb-3"><h3 className="d-inline-block pr-md-2"><strong>Cole Taylor</strong></h3><h5 class="d-inline-block">Computer Science Undergrad at the University of Utah</h5></span>
