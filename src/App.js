@@ -14,10 +14,10 @@ function App() {
               <div className="container">
                 <div className="row align-items-center justify-content-center">
                   <div className="col-12 col-md-auto mb-md-2 justify-content-center justify-content-md-right text-center text-md-right">
-                    <img src="cole_taylor_right.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
+                    <img src="Cole.jpg" alt="Cole Taylor" className="img-fluid rounded-circle profile-photo mw-100 mb-4 mb-md-0" />
                   </div>
                   <div className="col-12 col-md-auto text-center text-lg-left">
-                    <span className="mb-3"><h3 className="d-inline-block pr-md-2"><strong>Cole Taylor</strong></h3><h5 class="d-inline-block">Software Developer and C.S. Student at the University of Utah</h5></span>
+                    <span className="mb-3"><h3 className="d-inline-block pr-md-2"><strong>Cole Taylor</strong></h3><h5 class="d-inline-block">Computer Science Undergrad at the University of Utah</h5></span>
                     <div class="mt-3">
                       <ContactMenu includeResume />
                     </div>
@@ -30,6 +30,38 @@ function App() {
               <h2 className="pt-5 pb-5 my-4">My Work</h2>
               {/* <hr className="mx-5" /> */}
               <div className="row">
+                <ProjectCard
+                  title="AI Notebook"
+                  subtitle="Personal Project"
+                  languages={["mongodb", "node", "express", "js", "css", "bootstrap"]}
+                  body={
+                    <div>
+                      <p>An online journal that integrates a NLU web API. It can summarize your journal entries, suggest search terms, and generate charts showing what you're thinking about over time. </p>
+                      <p>I built some simple authenticated web API routes so that the frontend can live update when the user presses certain buttons.</p>
+                      <p>The site is fully responsive and works well on all screen sizes.</p>
+                      <h6>Skills:</h6>
+                      <ul className="p-0">
+                        <li>Responsive CSS 3 & Bootstrap 4</li>
+                        <li>Client-side and server-side form validation</li>
+                        <li>Non-relational database querying</li>
+                        <li>Designing a web API</li>
+                      </ul>
+                    </div>
+                  }
+                  buttons={[
+                    {
+                      text: "Visit the Site",
+                      link: "https://ainotebook.herokuapp.com"
+                    },
+                    {
+                      text: "Github Repo",
+                      link: "http://github.com/coletaylor017/ainotebook"
+                    }
+                  ]}
+                  imageSrc="journalsite.PNG"
+                  dark
+                  
+                />
                 <ProjectCard
                   title="School Authority"
                   subtitle="Contract Project"
@@ -52,64 +84,33 @@ function App() {
                     }
                   ]}
                   imageSrc="schoolAuthorityPreview.png"
-                  dark
                 />
                 <ProjectCard
-                  title="AI Notebook"
+                  title="Art Portfolio for Maya Wagner"
                   subtitle="Personal Project"
-                  languages={["mongodb", "node", "express", "js", "css", "bootstrap"]}
+                  languages={["react", "js", "bootstrap"]}
                   body={
                     <div>
-                      <p>An online journal that attempts to guess what you are thinking about and then generates interesting charts with that data. The server uses the IBM Watson web API to obtain NLU data for each journal entry. Then I store the data in a database, analyze it, and make charts on the frontend with the aggregated data.</p>
+                      <p>A responsive portfolio site made with React for a friend. I used a headless CMS to let her upload art pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar. The focus was on an extremely simple user interface so that she could start manging her site with little or no learning curve.</p>
                       <h6>Skills:</h6>
                       <ul className="p-0">
-                        <li>MongoDB Aggregation Pipelines</li>
-                        <li>Client-side and server-side form validation</li>
-                        <li>Responsive CSS 3 & Bootstrap 4</li>
+                        <li>Project manegement & agile development</li>
+                        <li>CMS integration</li>
+                        <li>Responsive web design</li>
                       </ul>
                     </div>
                   }
                   buttons={[
                     {
                       text: "Visit the Site",
-                      link: "https://ainotebook.herokuapp.com"
+                      link: "https://rellios.vercel.app"
                     },
                     {
                       text: "Github Repo",
-                      link: "http://github.com/coletaylor017/ainotebook"
+                      link: "https://github.com/coletaylor017/rellios"
                     }
                   ]}
-                  imageSrc="aiNotebookData.PNG"
-                  
-                />
-                <ProjectCard
-                  title="Tank Wars"
-                  subtitle="Class project for CS 3500"
-                  languages={["csharp"]}
-                  body={
-                    <div>
-                      <p>An online multiplayer tank game implemented in C#. The server runs as a console app and can accept multiple clients. I designed and programmed this with a partner for CS 3500 at the University of Utah.</p>
-                      <h6>Skills:</h6>
-                      <ul className="p-0">
-                        <li>Design Patterns</li>
-                        <li>Multithreaded programming</li>
-                        <li>Debugging race conditions</li>
-                        <li>Pair programming</li>
-                      </ul>
-                      <p><em>Note: Source code is available only on Google Drive by request of the professor as an anti-cheating measure.</em></p>
-                    </div>
-                  }
-                  buttons={[
-                    {
-                      text: "Download the Latest Release",
-                      link: "https://github.com/coletaylor017/TankWars/releases/download/1.0/TankWars.zip"
-                    },
-                    {
-                      text: "Source Code",
-                      link: "https://drive.google.com/drive/folders/1RTC3nCgGwwyfH-rDea6EefxYQvfNlCuO?usp=sharing"
-                    }
-                  ]}
-                  imageSrc="tankwars.PNG"
+                  imageSrc="rellios.PNG"
                   dark
                 />
                 <ProjectCard
@@ -140,31 +141,33 @@ function App() {
                   
                 />
                 <ProjectCard
-                  title="Art Portfolio for Maya Wagner"
-                  subtitle="Personal Project"
-                  languages={["react", "js", "bootstrap"]}
+                  title="Tank Wars"
+                  subtitle="Class project for CS 3500"
+                  languages={["csharp"]}
                   body={
                     <div>
-                      <p>A responsive portfolio site made with React for a friend. I used a headless CMS to let her upload art pieces, edit the blog, and change the about page. The blog is set up so that if she's writing a post to promote a piece, she can feature a link to buy it in a sidebar. The focus was on an extremely simple user interface so that she could start manging her site with little or no learning curve.</p>
+                      <p>An online multiplayer tank game implemented in C#. The server runs as a console app and can accept multiple clients. I designed and programmed this with a partner for CS 3500 at the University of Utah.</p>
                       <h6>Skills:</h6>
                       <ul className="p-0">
-                        <li>Project manegement & agile development</li>
-                        <li>CMS integration</li>
-                        <li>Responsive web design</li>
+                        <li>Design Patterns</li>
+                        <li>Multithreaded programming</li>
+                        <li>Debugging race conditions</li>
+                        <li>Pair programming</li>
                       </ul>
+                      <p><em>Note: Source code is available only on Google Drive by request of the professor as an anti-cheating measure.</em></p>
                     </div>
                   }
                   buttons={[
                     {
-                      text: "Visit the Site",
-                      link: "https://rellios.vercel.app"
+                      text: "Download the Latest Release",
+                      link: "https://github.com/coletaylor017/TankWars/releases/download/1.0/TankWars.zip"
                     },
                     {
-                      text: "Github Repo",
-                      link: "https://github.com/coletaylor017/rellios"
+                      text: "Source Code",
+                      link: "https://drive.google.com/drive/folders/1RTC3nCgGwwyfH-rDea6EefxYQvfNlCuO?usp=sharing"
                     }
                   ]}
-                  imageSrc="rellios.PNG"
+                  imageSrc="tankwars.PNG"
                   dark
                 />
               </div>
