@@ -6,7 +6,7 @@
 }
 
 .profile-photo {
-  max-height: 11em;
+  max-height: 20em;
   filter: brightness(90%);
 }
 
@@ -17,4 +17,8 @@
 
 .bg-darker {
   background-color: #1e2125;
+}
+
+.project-card-bullet {
+  list-style-type: none;
 }
